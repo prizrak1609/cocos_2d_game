@@ -2,11 +2,11 @@
 
 echo "This Shell Script will install dependencies for cocos2d-x" 
 
-sudo apt update
+apt update
 
 # run 32bit applicatio: needed for lua relase mode as luajit has 32bit version
 # https://askubuntu.com/questions/454253/how-to-run-32-bit-app-in-ubuntu-64-bit
-sudo dpkg --add-architecture i386
+dpkg --add-architecture i386
 DEPENDS='libc6:i386 libncurses5:i386 libstdc++6:i386'
  
 
@@ -25,4 +25,4 @@ DEPENDS+=' libssl-dev'
 DEPENDS+=' libgtk-3-dev'
 DEPENDS+=' binutils'
 
-sudo apt install --force-yes --yes $DEPENDS > /dev/null
+apt install --force-yes --yes $DEPENDS
