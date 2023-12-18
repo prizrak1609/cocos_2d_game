@@ -10,7 +10,7 @@ set(INSTALL_DEMOS OFF CACHE BOOL "" FORCE)
 set(BUILD_SHARED OFF CACHE BOOL "" FORCE)
 set(BUILD_STATIC ON CACHE BOOL "" FORCE)
 set(INSTALL_STATIC ON CACHE BOOL "" FORCE)
-set(LIB_INSTALL_DIR ${platform_spec_path})
+set(LIB_INSTALL_DIR ${platform_spec_path} CACHE STRING "" FORCE)
 
 include(FetchContent)
 
