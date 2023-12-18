@@ -37,7 +37,7 @@ add_library(${target_name} STATIC IMPORTED GLOBAL)
 add_dependencies(${target_name} ${fetch_project})
 
 set_target_properties(${target_name} PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "${platform_spec_path}/../../include"
+  INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include"
 )
 if(WINDOWS)
   set_target_properties(${target_name} PROPERTIES
