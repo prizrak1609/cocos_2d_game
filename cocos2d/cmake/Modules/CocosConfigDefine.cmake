@@ -123,9 +123,5 @@ endfunction()
         target_compile_options(${target}
             PUBLIC /MP
         )
-	elseif(LINUX)
-		target_compile_options(${target}
-            PUBLIC -fno-finite-math-only
-        )
     endif()
  endfunction()
