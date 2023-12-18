@@ -29,6 +29,7 @@ FetchContent_GetProperties(${fetch_project})
 if(NOT ${fetch_project}_POPULATED)
   FetchContent_Populate(${fetch_project})
   
+  message("Add chipmunk folders ${${fetch_project}_SOURCE_DIR} || ${${fetch_project}_BINARY_DIR}")
   add_subdirectory(${${fetch_project}_SOURCE_DIR} ${${fetch_project}_BINARY_DIR})
 endif()
 
